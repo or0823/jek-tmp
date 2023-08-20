@@ -1,0 +1,2 @@
+RewriteEngine on
+RewriteRule ^(.*)$ https://example.net/$1 [L,R=301,NC]

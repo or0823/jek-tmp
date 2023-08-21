@@ -1,2 +1,2 @@
-include: 
-  - .htaccess
+gems: 
+  - jekyll-redirect-from

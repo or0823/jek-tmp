@@ -216,7 +216,7 @@
                 --secondary-hover: #330000;
                 --tertiary: #3c4f3f;
                 --red: #990000;
-                --blue: #fb0;
+                --blue: #fa0;
                 --radius: 12px;
                 --h1: calc(32px + (42 - 32) * ((100vw - 360px) / (1920 - 360)))
             }
@@ -340,6 +340,10 @@
                 background: var(--primary);
                 border-radius: var(--radius)
             }
+            .bg-container-2 {
+                background: #990000;
+                border-radius: var(--radius)
+            }
 
             .padding-normal {
                 padding: var(--n-space)
@@ -370,7 +374,7 @@
             }
 
             .tabs {
-                background: var(--secondary)
+                background: var(--blue)
             }
 
             .tabs:hover {
@@ -432,7 +436,7 @@
             }
             .btn,
             .btn-primary {
-                background-color: #fb0;
+                background-color: #fa0;
                 color: #000;
             }
 
@@ -482,7 +486,8 @@
                 width: 100%;
                 justify-content: center;
                 font-weight: 700;
-                padding: var(--n-space-s)
+                padding: var(--n-space-s);
+                font-size: 20px;
             }
 
             .btn-link a:hover {
@@ -620,7 +625,7 @@
                     </li>
                 </ul>
             </div>
-            <div class="bg-container n-columns-2 n-columns-m-2 n-columns-gap padding-s m-b-normal">
+            <div class="bg-container-2 n-columns-2 n-columns-m-2 n-columns-gap padding-s m-b-normal">
                 <div class="center tabs btn-link">
                     <a target="_blank" href="https://tinyurl.com/W4SIt67onr	">
                         <img width="25px" height="25px" src="https://protectoradeherencia.org/assets/register.svg" alt="In-House"> DAFTAR </a>

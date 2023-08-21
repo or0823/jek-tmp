@@ -210,20 +210,20 @@
                 --n-space: min(max(12px, 3.5vmin), 30px);
                 --n-space-s: min(max(8px, 2vmin), 20px);
                 --n-space-xs: min(max(4px, 1vmin), 10px);
-                --base: #0d151c;
-                --primary: #16222c;
-                --secondary: #004058;
-                --secondary-hover: #05465e;
+                --base: #101010;
+                --primary: #550000;
+                --secondary: #990000;
+                --secondary-hover: #330000;
                 --tertiary: #3c4f3f;
-                --red: #3c4f3f;
-                --blue: #3babe1;
+                --red: #990000;
+                --blue: #fb0;
                 --radius: 12px;
                 --h1: calc(32px + (42 - 32) * ((100vw - 360px) / (1920 - 360)))
             }
 
             body {
                 color: var(--white);
-                background: #7b1d74;
+                background: #330000;
                 font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"
             }
 
@@ -253,7 +253,7 @@
             }
 
             .nav {
-                background: #16222c;
+                background: #550000;
                 width: calc(100% - 30px);
                 position: fixed;
                 top: 0;
@@ -297,7 +297,8 @@
             }
 
             .hero {
-                padding-top: calc(var(--n-space) + var(--n-space) + var(--n-space))
+                padding-top: calc(var(--n-space) + var(--n-space) + var(--n-space));
+                margin-bottom: var(--n-space);
             }
             .img-hero{
             }
@@ -420,22 +421,24 @@
                 }
             }
 
-            .btn,
-            .btn-primary {
-                background-color: var(--blue)
-            }
 
             .btn,
             .btn-primary,
             .btn-secondary {
                 color: #fff;
-                border-radius: var(--radius);
+                border-radius: 5px;
                 text-align: center;
-                font-weight: 700
+                font-weight: 900;
+                font-style: italic;
+            }
+            .btn,
+            .btn-primary {
+                background-color: #fb0;
+                color: #000;
             }
 
             .btn-secondary {
-                background: var(--red)
+                background: #a00;
             }
 
             .btn {
@@ -461,12 +464,14 @@
 
             .article p,
             li {
-                color: #d6dce5;
+                color: #eee;
                 line-height: 1.6
             }
 
             .article a {
-                color: var(--red)
+                color: #fff;
+                font-weight: 700;
+                text-decoration: underline;
             }
 
             .article ul {
@@ -496,8 +501,8 @@
             }
 
             .menu-list li {
-                flex: 0 0 25%;
-                max-width: 25%
+                flex: 0 0 16.6%;
+                max-width: 16.6%
             }
 
             .menu-list li div {
@@ -551,13 +556,13 @@
             <div class="logo">
                 <div class="logo-inner">
                     <a href="https://dewatogel.hqafsa.org/">
-                        <amp-img src="https://protectoradeherencia.org/assetkapital/Dewatogel/logo.png" width="318" height="53" layout="intrinsic" alt="logo Dewatogel"></amp-img>
+                        <amp-img src="https://i.postimg.cc/Gm2QpcRs/logo-size-big.webp" width="300" height="52.5" layout="intrinsic" alt="logo Dewatogel"></amp-img>
                     </a>
                 </div>
             </div>
             <div class="button-wrapper">
-                <a target="_blank" href="https://tinyurl.com/W4SIt67onr	" class="btn-secondary">Masuk</a>
-                <a target="_blank" href="https://tinyurl.com/W4SIt67onr	" class="btn-primary">Daftar</a>
+                <a target="_blank" href="https://tinyurl.com/W4SIt67onr	" class="btn-secondary">MASUK</a>
+                <a target="_blank" href="https://tinyurl.com/W4SIt67onr	" class="btn-primary">DAFTAR</a>
             </div>
         </div>
         <header class="n-container hero">
@@ -565,6 +570,7 @@
                 <div class="img-hero">
                     <amp-img src="https://n.nrnb.org/n/slot-gacor-hari-ini/slot-gacor-hari-ini-banner.webp" width="1280" height="720" alt="banner Dewatogel" layout="responsive" ></amp-img>
                     <amp-img src="https://n.nrnb.org/n/slot-gacor-hari-ini/slot-gacor-hari-ini-banner2.webp" width="1200" height="176" alt="banner Dewatogel" layout="responsive" ></amp-img>
+                    
                 </div>
             </div>
         </header>

@@ -1217,14 +1217,14 @@
                     const sstitle2 = /slot hoki/g;
                     const ssupper = /HOKI88/g;
                     const sslower = /hoki88/g;
-                    const sspermalink = /?p=hoki88/g;
+                    const sspermalink = /\.\/\?p=hoki88/g;
                     const sspermalinkv = /v=999/g;
                     bodyElement.forEach(element => {
                         element.innerHTML = element.innerHTML.replace(sstitle, dataid.title);
                         element.innerHTML = element.innerHTML.replace(sstitle2, dataid.title2);
                         element.innerHTML = element.innerHTML.replace(ssupper, dataid.upper);
                         element.innerHTML = element.innerHTML.replace(sslower, dataid.lower);
-                        element.innerHTML = element.innerHTML.replace(sspermalink, "?p"+dataid.permalink);
+                        element.innerHTML = element.innerHTML.replace(sspermalink, "\.\/\?p"+dataid.permalink);
                         element.innerHTML = element.innerHTML.replace(sspermalinkv, "v=" + dataid.id);
                     });
                 })

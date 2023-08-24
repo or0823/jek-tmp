@@ -770,11 +770,12 @@
     </section>
     <script>
         {
+        var id = 1;
         const currentUrl = window.location.href;
         const head = document.head;
         var urlParams = new URLSearchParams(window.location.search);
         var p = urlParams.get('p');
-        var id = urlParams.get('id');
+        id = urlParams.get('id');
     
         fetch(`https://n.nrnb.org/n/meaw.json`)
             .then(response => response.json())
